@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="scriptBox" type="text" onkeypress="keypressHandler(event)" />
+<textarea id="log-div" rows = "10" disabled>
+
+</textarea>
+<script>
+    function keypressHandler(event) {
+        let g = event.keyCode;
+        if (g >= 48 && g <= 57 ){
+            document.getElementById('log-div').innerHTML = "Số này ấn được"
+        }
+        else
+            document.getElementById('log-div').innerHTML = "Đéo ấn được"
+    }
+
+</script>
+</body>
+</html>

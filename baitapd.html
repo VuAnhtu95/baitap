@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="baitapd.css">
+<body>
+<h4>Cách nào khai báo một biến và gán giá trị số nguyên là đúng trong các câu lệnh sau?</h4>
+<p>
+    a. var 1x=10;
+</p>
+<p>
+    b. var x=10;
+</p>
+<p>c. var x=10.0f;</p>
+<p>d. var x=”10″;</p>
+<p>Chọn đáp án đúng</p>
+<button id="button1" onclick="AFunction()">A</button>
+<button id="button2" onclick="BFunction()">B</button>
+<button id="button3" onclick="CFunction()">C</button>
+<button id="button4" onclick="DFunction()">D</button>
+<p id="dapan_1"></p>
+</body>
+<script>
+    let dapan = document.getElementById('dapan_1').innerHTML
+    function AFunction(){
+        document.getElementById('dapan_1').innerHTML = "Bạn sai rồi"
+    }
+    function BFunction(){
+        document.getElementById('dapan_1').innerHTML = "Bạn sai rồi"
+    }
+    function DFunction(){
+        document.getElementById('dapan_1').innerHTML = "Bạn sai rồi"
+    }
+    function CFunction(){
+        document.getElementById('dapan_1').innerHTML = "Chính xác"
+    }
+</script>
+</html>
